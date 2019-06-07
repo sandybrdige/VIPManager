@@ -41,6 +41,6 @@ if __name__=="__main__":
     #
 
     a=(0.8)
-    b=(499)
+    b=(494899)
     c=float(a)*float(b)
     print(round(c,1))
