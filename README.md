@@ -1,0 +1,2 @@
+# VIPManager
+testQTapplication
