@@ -72,7 +72,6 @@ class Manager(QMainWindow,Ui_MainWindow):
         self.lineEdit_2.setText(str(msg[1]))
 
     def selectVIPthPhone(self):
-        print("响应回车电话选择VIP")
         PHONE=self.lineEdit_3.text()
         mes=[PHONE,]
         print(mes)
@@ -80,7 +79,6 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.sethp=DataBase(mes)
             self.sethp.sig.connect(self.selectphonecallback)
             self.sethp.selectVIPthphone()
-            print("吊电话选择VIP")
         except:
             raise
 
