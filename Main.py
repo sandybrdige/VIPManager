@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow,QDialog,QLineEdit,QPushButton
-from PyQt5.QtCore import pyqtSlot
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow,QLabel,QMessageBox
@@ -66,12 +64,10 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.seth=DataBase(mes)
             self.seth.sig.connect(self.selectvipcallback)
             self.seth.selectVIPthid()
-            print("吊起选择VIP")
         except:
             raise
 
     def selectvipcallback(self,msg):
-        print("回调VIP")
         self.lineEdit_3.setText(str(msg[0]))
         self.lineEdit_2.setText(str(msg[1]))
 
