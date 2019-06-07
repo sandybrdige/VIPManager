@@ -90,7 +90,7 @@ class Manager(QMainWindow,Ui_MainWindow):
 
     def selectphonecallback(self,msg):
 
-        print("电话VIP",msg)
+
         self.lineEdit.setText(str(msg[1]))
         self.lineEdit_2.setText(str(msg[0]))
 
@@ -256,7 +256,6 @@ class DataBase(QtCore.QThread):
         writer.writerows(c)
 
     def CreatCSVVIP(self):
-        print("开始处理vipcsv")
         conn = self.database
         c = conn.cursor()
         c.execute('select * from VIPinfo')
