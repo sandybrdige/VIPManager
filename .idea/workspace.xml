@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23f6e048-c67c-41ad-9df0-f06afc58f75c" name="默认的" comment="test mergecode">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COSTDETAIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VIPINFO.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/Main.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/Main.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-Analysis.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-COLLECT.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-EXE.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-PKG.pkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-PKG.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-PYZ.pyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/out00-PYZ.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/warnMain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Main/xref-Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/COSTDETAIL.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/MSVCP140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Main.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Main.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5.Qt.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5.QtCore.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5.QtGui.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5.QtPrintSupport.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5.QtWidgets.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/bin/qt.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/iconengines/qsvgicon.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qgif.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qicns.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qico.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qjpeg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qsvg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qtga.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qtiff.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qwbmp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/imageformats/qwebp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/platforms/qminimal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/platforms/qoffscreen.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/platforms/qwebgl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/platforms/qwindows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/PyQt5/Qt/plugins/printsupport/windowsprintersupport.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Gui.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Network.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5PrintSupport.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Qml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Quick.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Svg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5WebSockets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/Qt5Widgets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/VCRUNTIME140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_bz2.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_hashlib.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_lzma.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_socket.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_sqlite3.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/_ssl.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-console-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-datetime-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-debug-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-errorhandling-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-file-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-file-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-file-l2-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-handle-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-heap-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-interlocked-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-libraryloader-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-localization-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-memory-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-namedpipe-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-processenvironment-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-processthreads-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-processthreads-l1-1-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-profile-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-rtlsupport-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-string-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-synch-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-synch-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-sysinfo-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-timezone-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-core-util-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-conio-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-convert-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-environment-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-filesystem-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-heap-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-locale-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-math-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-multibyte-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-process-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-runtime-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-stdio-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-string-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-time-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/api-ms-win-crt-utility-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/pyexpat.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/python3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/python36.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/select.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/sip.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/ucrtbase.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Main/unicodedata.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/VIPINFO.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/VIPdatabase.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eQT.csv" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="VIPdatabase" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+              <folding>
+                <element signature="e#24#66#0" expanded="true" />
+                <element signature="e#9541#10134#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="e#1#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VIPManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="201" column="62" lean-forward="true" selection-start-line="201" selection-start-column="62" selection-end-line="201" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>QTableWidget</find>
+      <find>text</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/VIPManager.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_2.sql" />
+        <option value="$PROJECT_DIR$/output.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-20" />
+    <option name="y" value="10" />
+    <option name="width" value="1935" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VIPManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="output" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VIPManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/output.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VIPManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.output" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.output" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23f6e048-c67c-41ad-9df0-f06afc58f75c" name="默认的" comment="" />
+      <created>1557545450478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557545450478</updated>
+      <workItem from="1559839431807" duration="1328000" />
+      <workItem from="1559870935080" duration="1456000" />
+    </task>
+    <task id="LOCAL-00001" summary="默认的">
+      <created>1559871594038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559871594038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="默认的">
+      <created>1559871950951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559871950951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test mergecode">
+      <created>1559872149316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559872149316</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2784000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21715818" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="2" weight="0.36505377" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="运行" order="7" weight="0.22263223" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5963173" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.4837341" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" weight="0.3295699" />
+      <window_info anchor="right" id="Database" order="4" weight="0.07104558" />
+      <window_info anchor="right" id="SciView" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="默认的" />
+    <MESSAGE value="test mergecode" />
+    <option name="LAST_COMMIT_MESSAGE" value="test mergecode" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/output.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VIPManager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1559840162261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="db://cb48a3c1-0747-4ddd-b661-5a7207158923/consoles/Connection" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b35a385c-cda8-4e82-8afd-262630d38f0a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIPManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="201" column="62" lean-forward="true" selection-start-line="201" selection-start-column="62" selection-end-line="201" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#1#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+          <folding>
+            <element signature="e#24#66#0" expanded="true" />
+            <element signature="e#9541#10134#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
