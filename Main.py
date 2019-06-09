@@ -3,14 +3,14 @@ from PyQt5 import QtCore,QtGui
 import sys
 import sys
 from PyQt5.QtCore import *
-from PyQt5.QtWidgets import QApplication, QMainWindow,QItemDelegate,QHeaderView
+from PyQt5.QtWidgets import QApplication, QMainWindow,QItemDelegate,QHeaderView,QTableView,QDialog,QLineEdit
 from PyQt5.QtSql import QSqlTableModel,QSqlDatabase
 from VIPManager import Ui_MainWindow
 import sqlite3
 import time
 from PyQt5 import sip
 import csv,io,codecs
-
+from Dialog import Ui_Dialog
 
 class Manager(QMainWindow,Ui_MainWindow):
 
@@ -30,9 +30,23 @@ class Manager(QMainWindow,Ui_MainWindow):
         self.actionOutput_VIPinfo.triggered.connect(self.GenerateCsv)
         self.lineEdit_5.returnPressed.connect(self.selectVIPthID5)
         self.lineEdit_7.returnPressed.connect(self.selectVIPthPhone7)
+        self.flag="disable"
+        self.actionEnable.triggered.connect(self.enableedit)
+        self.actionDiable.triggered.connect(self.disableedit)
 
+    def enableedit(self):
+        my=MyDialog()
+        my.flagpipe.connect(self.change)
+        my.exec()
+        return
 
+    def change(self,msg):
+        self.flag=msg
+        print(self.flag)
 
+    def disableedit(self):
+        self.flag="disable"
+        return
     def addNewVip(self):
         ID=self.lineEdit.text()
         NAME=self.lineEdit_2.text()
@@ -45,23 +59,18 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.thread.handlevip()
         except:
             pass
-
-
     def CreateCsv(self):
         try:
             self.write=DataBase()
             self.write.CreatCSVdetail()
         except:
             pass
-
     def GenerateCsv(self):
         try:
             self.write=DataBase()
             self.write.CreatCSVVIP()
         except:
             pass
-
-
     def selectVIPthID(self):
         ID=self.lineEdit.text()
         mes=[ID,]
@@ -80,15 +89,12 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.seth.selectVIPthid()
         except:
             raise
-
-
     def selectvipcallback(self,msg):
         self.lineEdit_3.setText(str(msg[0]))
         self.lineEdit_2.setText(str(msg[1]))
     def selectvipcallback5(self,msg):
         self.lineEdit_6.setText(str(msg[1]))
         self.lineEdit_7.setText(str(msg[0]))
-
     def selectVIPthPhone(self):
         PHONE=self.lineEdit_3.text()
         mes=[PHONE,]
@@ -98,7 +104,6 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.sethp.selectVIPthphone()
         except:
             raise
-
     def selectVIPthPhone7(self):
         PHONE=self.lineEdit_7.text()
         mes=[PHONE,]
@@ -108,7 +113,6 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.sethp.selectVIPthphone()
         except:
             raise
-
     def selectphonecallback(self,msg):
 
 
@@ -119,7 +123,6 @@ class Manager(QMainWindow,Ui_MainWindow):
 
         self.lineEdit_5.setText(str(msg[1]))
         self.lineEdit_6.setText(str(msg[0]))
-
     def callback(self,msg):
         if len(msg)==5:
             self.lineEdit_8.setText(str(msg[0]))
@@ -129,7 +132,6 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.lineEdit_12.setText(str(msg[4]))
         else:
             self.lineEdit_9.setText(str(msg[0]))
-
     def cancelQuery(self):
         self.lineEdit.clear()
         self.lineEdit_2.clear()
@@ -148,11 +150,16 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.set.QueryVipDetail()
         except:
             raise
-
     def QueryVipDetailcallback(self,model):
         self.tableView.setModel(model)
-        self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
+        #self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
         self.tableView.horizontalHeader().setStretchLastSection(True)
+        if self.flag == "enable":
+            self.tableView.setEditTriggers(QTableView.DoubleClicked)
+            self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
+        if self.flag == "disable":
+            self.tableView.setEditTriggers(QTableView.NoEditTriggers)
+
 
     def QueryVip(self):
         queryid=[self.lineEdit_5.text(),]
@@ -162,10 +169,13 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.set.QueryVip()
         except:
             raise
-
     def QueryVipcallback(self,model):
+        if self.flag=="enable":
+            self.tableView.setEditTriggers(QTableView.DoubleClicked)
+            self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
+        if self.flag=="disable":
+            self.tableView.setEditTriggers(QTableView.NoEditTriggers)
         self.tableView.setModel(model)
-        self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
         self.tableView.horizontalHeader().setStretchLastSection(True)
 
     def CleanAll(self):
@@ -174,7 +184,38 @@ class Manager(QMainWindow,Ui_MainWindow):
         self.lineEdit_7.clear()
         empty=None
         self.tableView.setModel(empty)
-        #self.tableView.setModel()
+
+class MyDialog(QDialog,Ui_Dialog):
+    flagpipe=pyqtSignal(str)
+
+    def __init__(self, parent = None):
+        print("启动")
+        super(MyDialog, self).__init__()
+        self.setupUi(self)
+        self.pushButton.clicked.connect(self.verifypw)
+        self.pushButton_2.clicked.connect(self.cl)
+        self.lineEdit.setEchoMode(QLineEdit.Password)
+        self.lineEdit.returnPressed.connect(self.verifypw)
+        self.pw="123456"
+        self.flag="enable"
+
+    def cl(self):
+        print("关闭对话")
+        self.close()
+
+    def verifypw(self):
+        print("开始校验")
+        if self.lineEdit.text()==self.pw:
+            print("密码验证正确")
+            self.flagpipe.emit(self.flag)
+            self.close()
+        else:
+            print("密码验证错误")
+            self.label_3.setText("密码输入错误")
+
+        return
+
+
 
 
 class EmptyDelegate(QItemDelegate):
@@ -211,15 +252,15 @@ class DataBase(QtCore.QThread):
                 c.execute("INSERT INTO VIPinfo VALUES(NULL,'%s','%s','%s','%s','%s','%s','%s')" % (
                 NAME, ID, PHONE, CONSUME, "SILVER", CONSUME, "1"))
                 c.execute(('UPDATE VIPinfo SET VIPlV=CASE '
-                           'WHEN (VIPPOINT BETWEEN 0 AND 200) THEN "SILVER" '
-                           'WHEN (VIPPOINT BETWEEN 201 AND 500) THEN "GOLD" '
-                           'WHEN (VIPPOINT BETWEEN 501 AND 1000) THEN "DIAMOND" '
-                           'WHEN (VIPPOINT>=1000) THEN "CROWN" '
+                           'WHEN (VIPPOINT BETWEEN 0 AND 499) THEN "SILVER" '
+                           'WHEN (VIPPOINT BETWEEN 500 AND 999) THEN "GOLD" '
+                           'WHEN (VIPPOINT BETWEEN 1000 AND 1999) THEN "PLATINUM" '
+                           'WHEN (VIPPOINT>=2000) THEN "DIAMOND" '
                            'ELSE VIPLV END, '
-                           'DISCOUNT=CASE WHEN (VIPPOINT BETWEEN 0 AND 200) THEN 1 '
-                           'WHEN (VIPPOINT BETWEEN 201 AND 500) THEN 0.9 '
-                           'WHEN (VIPPOINT BETWEEN 501 AND 1000) THEN 0.8 '
-                           'WHEN (VIPPOINT>1000) THEN 0.75 '
+                           'DISCOUNT=CASE WHEN (VIPPOINT BETWEEN 0 AND 499) THEN 1 '
+                           'WHEN (VIPPOINT BETWEEN 500 AND 999) THEN 0.9 '
+                           'WHEN (VIPPOINT BETWEEN 1000 AND 1999) THEN 0.85 '
+                           'WHEN (VIPPOINT>=2000) THEN 0.8 '
                            'ELSE DISCOUNT END WHERE VIPID=%s') % (ID))
                 judge = c.execute("SELECT * from VIPinfo where VIPID=%s" % (ID))
                 value = judge.fetchone()
@@ -240,15 +281,15 @@ class DataBase(QtCore.QThread):
                     "UPDATE VIPinfo SET TOTALCOST=(SELECT SUM(COST) FROM CostDetail WHERE VIPID=%s),VIPPOINT=(SELECT SUM(COST) FROM CostDetail WHERE VIPID=%s) WHERE VIPID=%s" % (
                     ID,ID,ID))
                 c.execute(('UPDATE VIPinfo SET VIPlV=CASE '
-                           'WHEN (VIPPOINT BETWEEN 0 AND 200) THEN "SILVER" '
-                           'WHEN (VIPPOINT BETWEEN 201 AND 500) THEN "GOLD" '
-                           'WHEN (VIPPOINT BETWEEN 501 AND 1000) THEN "DIAMOND" '
-                           'WHEN (VIPPOINT>=1000) THEN "CROWN" '
+                           'WHEN (VIPPOINT BETWEEN 0 AND 499) THEN "SILVER" '
+                           'WHEN (VIPPOINT BETWEEN 500 AND 999) THEN "GOLD" '
+                           'WHEN (VIPPOINT BETWEEN 999 AND 1999) THEN "PLATINUM" '
+                           'WHEN (VIPPOINT>=2000) THEN "DIAMOND" '
                            'ELSE VIPLV END, '
-                           'DISCOUNT=CASE WHEN (VIPPOINT BETWEEN 0 AND 200) THEN 1 '
-                           'WHEN (VIPPOINT BETWEEN 201 AND 500) THEN 0.9 '
-                           'WHEN (VIPPOINT BETWEEN 501 AND 1000) THEN 0.8 '
-                           'WHEN (VIPPOINT>1000) THEN 0.75 '
+                           'DISCOUNT=CASE WHEN (VIPPOINT BETWEEN 0 AND 499) THEN 1 '
+                           'WHEN (VIPPOINT BETWEEN 500 AND 999) THEN 0.9 '
+                           'WHEN (VIPPOINT BETWEEN 999 AND 1999) THEN 0.85 '
+                           'WHEN (VIPPOINT>=2000 THEN 0.8 '
                            'ELSE DISCOUNT END WHERE VIPID=%s') % (ID))
                 judge = c.execute("SELECT * from VIPinfo where VIPID=%s" % (ID))
                 value = judge.fetchone()
@@ -266,6 +307,7 @@ class DataBase(QtCore.QThread):
             conn.close()
 
         except:
+            conn.rollback()
             conn.close()
             print('数据库操作错误')
             #self.sig.emit(message)

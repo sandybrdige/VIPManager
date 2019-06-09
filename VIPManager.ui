@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -275,7 +275,15 @@
     <addaction name="separator"/>
     <addaction name="actionOutput_VIPinfo"/>
    </widget>
+   <widget class="QMenu" name="menuEdit_Data">
+    <property name="title">
+     <string>Edit Access</string>
+    </property>
+    <addaction name="actionEnable"/>
+    <addaction name="actionDiable"/>
+   </widget>
    <addaction name="menuOutPut_VIPlist"/>
+   <addaction name="menuEdit_Data"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOutput_CostDetails">
@@ -286,6 +294,16 @@
   <action name="actionOutput_VIPinfo">
    <property name="text">
     <string>Output VIPinfo</string>
+   </property>
+  </action>
+  <action name="actionEnable">
+   <property name="text">
+    <string>Enable</string>
+   </property>
+  </action>
+  <action name="actionDiable">
+   <property name="text">
+    <string>Diable</string>
    </property>
   </action>
  </widget>
