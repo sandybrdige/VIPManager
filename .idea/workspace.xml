@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23f6e048-c67c-41ad-9df0-f06afc58f75c" name="默认的" comment="test mergecode">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIPManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/VIPManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIPManager.ui" beforeDir="false" afterPath="$PROJECT_DIR$/VIPManager.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +29,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="177" selection-start-line="177" selection-end-line="178" selection-end-column="69" />
+            <state relative-caret-position="190">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <element signature="e#24#54#0" expanded="true" />
                 <element signature="e#432#1407#0" />
                 <element signature="e#1479#1573#0" />
                 <element signature="e#1487#1521#0" />
@@ -55,7 +49,6 @@
                 <element signature="e#3554#3880#0" />
                 <element signature="e#3917#4197#0" />
                 <element signature="e#4236#4459#0" />
-                <element signature="e#4524#4762#0" />
                 <element signature="e#4719#4930#0" />
                 <element signature="e#5184#5329#0" />
                 <element signature="e#5876#9650#0" />
@@ -279,7 +272,7 @@
       <workItem from="1560047684048" duration="490000" />
       <workItem from="1560048495693" duration="161000" />
       <workItem from="1560048684136" duration="701000" />
-      <workItem from="1560063020172" duration="5647000" />
+      <workItem from="1560063020172" duration="5910000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1559871594038</created>
@@ -337,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560047791997</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test mergecode">
+      <created>1560069232519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560069232519</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28791000" />
+    <option name="totallyTimeSpent" value="29054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -535,10 +535,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="177" selection-start-line="177" selection-end-line="178" selection-end-column="69" />
+        <state relative-caret-position="190">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <element signature="e#24#54#0" expanded="true" />
             <element signature="e#432#1407#0" />
             <element signature="e#1479#1573#0" />
             <element signature="e#1487#1521#0" />
@@ -556,7 +555,6 @@
             <element signature="e#3554#3880#0" />
             <element signature="e#3917#4197#0" />
             <element signature="e#4236#4459#0" />
-            <element signature="e#4524#4762#0" />
             <element signature="e#4719#4930#0" />
             <element signature="e#5184#5329#0" />
             <element signature="e#5876#9650#0" />
