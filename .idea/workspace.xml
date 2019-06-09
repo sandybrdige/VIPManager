@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f6e048-c67c-41ad-9df0-f06afc58f75c" name="默认的" comment="test mergecode" />
+    <list default="true" id="23f6e048-c67c-41ad-9df0-f06afc58f75c" name="默认的" comment="test mergecode">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIPManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/VIPManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIPManager.ui" beforeDir="false" afterPath="$PROJECT_DIR$/VIPManager.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VIPdatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/VIPdatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.py" beforeDir="false" afterPath="$PROJECT_DIR$/output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,34 +28,35 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="VIPdatabase" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+            <state relative-caret-position="228">
+              <caret line="174" column="37" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
               <folding>
-                <element signature="e#24#66#0" expanded="true" />
-                <element signature="e#9541#10134#0" />
+                <element signature="e#24#51#0" expanded="true" />
+                <element signature="e#5280#5452#0" />
+                <element signature="e#9735#10109#0" />
+                <element signature="e#10151#10552#0" />
+                <element signature="e#10593#11004#0" />
+                <element signature="e#11041#11472#0" />
+                <element signature="e#12097#12896#0" />
+                <element signature="e#11960#12553#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="319">
+              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
               <folding>
                 <element signature="e#1#15#0" expanded="true" />
               </folding>
@@ -57,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VIPManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="201" column="62" lean-forward="true" selection-start-line="201" selection-start-column="62" selection-end-line="201" selection-end-column="62" />
+            <state relative-caret-position="247">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -66,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+            <state relative-caret-position="-726">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -88,6 +98,8 @@
     <findStrings>
       <find>QTableWidget</find>
       <find>text</find>
+      <find>Hasaki</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,18 +111,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/VIPManager.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_2.sql" />
-        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_3.sql" />
+        <option value="$PROJECT_DIR$/VIPManager.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_4.sql" />
         <option value="$PROJECT_DIR$/output.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-20" />
-    <option name="y" value="10" />
+    <option name="x" value="-10" />
     <option name="width" value="1935" />
     <option name="height" value="980" />
   </component>
@@ -120,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,7 +145,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,7 +153,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.output">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VIPManager" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,13 +236,13 @@
     </configuration>
     <list>
       <item itemvalue="Python.Main" />
-      <item itemvalue="Python.output" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.output" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.output" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.output" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -245,7 +258,13 @@
       <option name="presentableId" value="Default" />
       <updated>1557545450478</updated>
       <workItem from="1559839431807" duration="1328000" />
-      <workItem from="1559870935080" duration="2789000" />
+      <workItem from="1559870935080" duration="3628000" />
+      <workItem from="1559986699765" duration="91000" />
+      <workItem from="1559986819040" duration="217000" />
+      <workItem from="1559987062680" duration="15000" />
+      <workItem from="1559987106205" duration="59000" />
+      <workItem from="1559988121761" duration="12338000" />
+      <workItem from="1560042965038" duration="4116000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1559871594038</created>
@@ -289,41 +308,49 @@
       <option name="project" value="LOCAL" />
       <updated>1559873667439</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test mergecode">
+      <created>1559874056781</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559874056781</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4117000" />
+    <option name="totallyTimeSpent" value="21792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21715818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23458445" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="DB Browser" order="2" weight="0.36505377" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.48866856" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31524926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="运行" order="7" weight="0.22263223" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.41218132" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32006127" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="13" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.4837341" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.35337242" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" weight="0.3295699" />
-      <window_info anchor="right" id="Database" order="4" weight="0.07104558" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.07104558" />
       <window_info anchor="right" id="SciView" order="5" />
     </layout>
   </component>
@@ -355,6 +382,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="默认的" />
@@ -366,7 +407,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test.py</url>
-          <line>4</line>
+          <line>66</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -374,12 +415,27 @@
           <line>38</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>287</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VIPManager$output.coverage" NAME="output Coverage Results" MODIFIED="1559873652816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VIPManager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1559840162261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VIPManager$output.coverage" NAME="output Coverage Results" MODIFIED="1560043700028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VIPManager$Main.coverage" NAME="Main Coverage Results" MODIFIED="1560047767397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="db://cb48a3c1-0747-4ddd-b661-5a7207158923/consoles/Connection" />
@@ -403,40 +459,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1039ab38-4bec-4ff1-92ce-b701d6d0c977/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIPManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        <state relative-caret-position="-726">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        <state relative-caret-position="319">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#24#66#0" expanded="true" />
-            <element signature="e#9541#10134#0" />
+            <element signature="e#1#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VIPManager.py">
+    <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="201" column="62" lean-forward="true" selection-start-line="201" selection-start-column="62" selection-end-line="201" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="174" column="37" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
           <folding>
-            <element signature="e#1#15#0" expanded="true" />
+            <element signature="e#24#51#0" expanded="true" />
+            <element signature="e#5280#5452#0" />
+            <element signature="e#9735#10109#0" />
+            <element signature="e#10151#10552#0" />
+            <element signature="e#10593#11004#0" />
+            <element signature="e#11041#11472#0" />
+            <element signature="e#12097#12896#0" />
+            <element signature="e#11960#12553#0" />
           </folding>
         </state>
       </provider>

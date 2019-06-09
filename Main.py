@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore,QtGui
 import sys
 import sys
 from PyQt5.QtCore import *
-from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow,QLabel,QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow,QItemDelegate,QHeaderView
+from PyQt5.QtSql import QSqlTableModel,QSqlDatabase
 from VIPManager import Ui_MainWindow
 import sqlite3
 import time
@@ -20,11 +21,15 @@ class Manager(QMainWindow,Ui_MainWindow):
         self.pushButton.clicked.connect(self.addNewVip)
         self.pushButton_2.clicked.connect(self.cancelQuery)
         self.pushButton_3.clicked.connect(self.QueryVipDetail)
+        self.pushButton_4.clicked.connect(self.QueryVip)
+        self.pushButton_5.clicked.connect(self.CleanAll)
         self.lineEdit.returnPressed.connect(self.selectVIPthID)
         self.lineEdit_4.returnPressed.connect(self.addNewVip)
         self.lineEdit_3.returnPressed.connect(self.selectVIPthPhone)
         self.actionOutput_CostDetails.triggered.connect(self.CreateCsv)
         self.actionOutput_VIPinfo.triggered.connect(self.GenerateCsv)
+        self.lineEdit_5.returnPressed.connect(self.selectVIPthID5)
+        self.lineEdit_7.returnPressed.connect(self.selectVIPthPhone7)
 
 
 
@@ -66,18 +71,40 @@ class Manager(QMainWindow,Ui_MainWindow):
             self.seth.selectVIPthid()
         except:
             raise
+    def selectVIPthID5(self):
+        ID=self.lineEdit_5.text()
+        mes=[ID,]
+        try:
+            self.seth=DataBase(mes)
+            self.seth.sig.connect(self.selectvipcallback5)
+            self.seth.selectVIPthid()
+        except:
+            raise
+
 
     def selectvipcallback(self,msg):
         self.lineEdit_3.setText(str(msg[0]))
         self.lineEdit_2.setText(str(msg[1]))
+    def selectvipcallback5(self,msg):
+        self.lineEdit_6.setText(str(msg[1]))
+        self.lineEdit_7.setText(str(msg[0]))
 
     def selectVIPthPhone(self):
         PHONE=self.lineEdit_3.text()
         mes=[PHONE,]
-        print(mes)
         try:
             self.sethp=DataBase(mes)
             self.sethp.sig.connect(self.selectphonecallback)
+            self.sethp.selectVIPthphone()
+        except:
+            raise
+
+    def selectVIPthPhone7(self):
+        PHONE=self.lineEdit_7.text()
+        mes=[PHONE,]
+        try:
+            self.sethp=DataBase(mes)
+            self.sethp.sig.connect(self.selectphonecallback7)
             self.sethp.selectVIPthphone()
         except:
             raise
@@ -87,15 +114,14 @@ class Manager(QMainWindow,Ui_MainWindow):
 
         self.lineEdit.setText(str(msg[1]))
         self.lineEdit_2.setText(str(msg[0]))
+    def selectphonecallback7(self,msg):
 
 
-
-
-
+        self.lineEdit_5.setText(str(msg[1]))
+        self.lineEdit_6.setText(str(msg[0]))
 
     def callback(self,msg):
         if len(msg)==5:
-            print("测试回调：",msg,msg[0],msg[1],msg[2],msg[3])
             self.lineEdit_8.setText(str(msg[0]))
             self.lineEdit_9.setText(str(msg[1]))
             self.lineEdit_10.setText(str(msg[2]))
@@ -104,23 +130,65 @@ class Manager(QMainWindow,Ui_MainWindow):
         else:
             self.lineEdit_9.setText(str(msg[0]))
 
-
     def cancelQuery(self):
         self.lineEdit.clear()
         self.lineEdit_2.clear()
         self.lineEdit_3.clear()
         self.lineEdit_4.clear()
-
+        self.lineEdit_8.clear()
+        self.lineEdit_9.clear()
+        self.lineEdit_10.clear()
+        self.lineEdit_11.clear()
+        self.lineEdit_12.clear()
     def QueryVipDetail(self):
-        print("Hasaki")
-        queryid=self.lineEdit_5.text()
-        queryname=self.lineEdit_6.text()
-        queryphone=self.lineEdit_7.text()
-        print(queryid,queryname,queryphone)
+        queryid=[self.lineEdit_5.text(),]
+        try:
+            self.set = DataBase(queryid)
+            self.set.model.connect(self.QueryVipDetailcallback)
+            self.set.QueryVipDetail()
+        except:
+            raise
+
+    def QueryVipDetailcallback(self,model):
+        self.tableView.setModel(model)
+        self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
+        self.tableView.horizontalHeader().setStretchLastSection(True)
+
+    def QueryVip(self):
+        queryid=[self.lineEdit_5.text(),]
+        try:
+            self.set = DataBase(queryid)
+            self.set.model.connect(self.QueryVipcallback)
+            self.set.QueryVip()
+        except:
+            raise
+
+    def QueryVipcallback(self,model):
+        self.tableView.setModel(model)
+        self.tableView.setItemDelegateForColumn(0, EmptyDelegate(self))
+        self.tableView.horizontalHeader().setStretchLastSection(True)
+
+    def CleanAll(self):
+        self.lineEdit_5.clear()
+        self.lineEdit_6.clear()
+        self.lineEdit_7.clear()
+        empty=None
+        self.tableView.setModel(empty)
+        #self.tableView.setModel()
+
+
+class EmptyDelegate(QItemDelegate):
+
+    def __init__(self, parent):
+        super(EmptyDelegate, self).__init__(parent)
+
+    def createEditor(self, QWidget, QStyleOptionViewItem, QModelIndex):
+        return None
 
 
 class DataBase(QtCore.QThread):
     sig=pyqtSignal(list)
+    model=pyqtSignal(QSqlTableModel)
 
 
     def __init__(self,message=None):
@@ -135,13 +203,11 @@ class DataBase(QtCore.QThread):
         ID = self.message[0]
         NAME = self.message[1]
         PHONE = self.message[2]
-        print(PHONE)
         CONSUME = self.message[3]
         try:
             judge = c.execute("SELECT * from VIPinfo where VIPID=%s" % (ID))
             value = judge.fetchall()
             if value == list():
-                print("开始增加新会员")
                 c.execute("INSERT INTO VIPinfo VALUES(NULL,'%s','%s','%s','%s','%s','%s','%s')" % (
                 NAME, ID, PHONE, CONSUME, "SILVER", CONSUME, "1"))
                 c.execute(('UPDATE VIPinfo SET VIPlV=CASE '
@@ -165,7 +231,6 @@ class DataBase(QtCore.QThread):
                 mes = [VIPID, VIPPoint, VIPLV, VIPDiscount, VIPprize]
                 c.execute(
                     "INSERT INTO CostDetail VALUES(NULL,'%s','%s','%s','%s','%s')" % (NAME, ID, PHONE, VIPprize, TIME))
-                print("新增回调信息发出，", mes)
                 self.sig.emit(mes)
 
 
@@ -195,14 +260,12 @@ class DataBase(QtCore.QThread):
                 remes=[VIPID,VIPPoint,VIPLV,VIPDiscount,VIPprize]
                 c.execute(
                     "INSERT INTO CostDetail VALUES(NULL,'%s','%s','%s','%s','%s')" % (NAME, ID, PHONE, VIPprize, TIME))
-                print("回调信息发出，", remes)
                 self.sig.emit(remes)
 
             conn.commit()
             conn.close()
 
         except:
-            #message=["数据库操作出错，请稍后重试",]
             conn.close()
             print('数据库操作错误')
             #self.sig.emit(message)
@@ -226,7 +289,6 @@ class DataBase(QtCore.QThread):
         conn = self.database
         c = conn.cursor()
         PHONE=self.message[0]
-        print(PHONE)
         try:
             judge = c.execute("SELECT VIPID,NAME from VIPinfo where PHONE=%s" % (PHONE))
             value=judge.fetchall()
@@ -259,6 +321,48 @@ class DataBase(QtCore.QThread):
             csv_wrtie.writerow(('KEY', 'NAME','ID','PHONE','VIPPOINT','VIPLV','TOTALCOST','DISCOUNT'))
         writer = UnicodeWriter(open(filename, "ab"))
         writer.writerows(c)
+
+    def QueryVipDetail(self):
+        ID=self.message[0]
+        db = QSqlDatabase.addDatabase('QSQLITE')
+        db.setDatabaseName("VIPdatabase.db")
+        db.open()
+        model = QSqlTableModel()
+        model.setTable("CostDetail")
+        model.setFilter("VIPID="+ID)
+        model.select()
+        model.setSort(0, Qt.AscendingOrder)
+        model.setHeaderData(0, Qt.Horizontal, "Key")
+        model.setHeaderData(1, Qt.Horizontal, "Custom_Name")
+        model.setHeaderData(2, Qt.Horizontal, "ID")
+        model.setHeaderData(3, Qt.Horizontal, "Phone")
+        model.setHeaderData(4, Qt.Horizontal, "Cost_Money")
+        model.setHeaderData(5, Qt.Horizontal, "Cost_Date")
+        self.model.emit(model)
+
+    def QueryVip(self):
+        ID=self.message[0]
+        db = QSqlDatabase.addDatabase('QSQLITE')
+        db.setDatabaseName("VIPdatabase.db")
+        db.open()
+        model = QSqlTableModel()
+        model.setTable("VIPinfo")
+        model.setFilter("VIPID="+ID)
+        model.select()
+        model.setSort(0, Qt.AscendingOrder)
+        model.setHeaderData(0, Qt.Horizontal, "Key")
+        model.setHeaderData(1, Qt.Horizontal, "Custom_Name")
+        model.setHeaderData(2, Qt.Horizontal, "ID")
+        model.setHeaderData(3, Qt.Horizontal, "Phone")
+        model.setHeaderData(4, Qt.Horizontal, "Total_Cost_Money")
+        model.setHeaderData(5, Qt.Horizontal, "VIP_Level")
+        model.setHeaderData(6, Qt.Horizontal, "VIP_Point")
+        model.setHeaderData(7, Qt.Horizontal, "VIP_Discount")
+        self.model.emit(model)
+
+
+
+
 
 
 class UnicodeWriter:
