@@ -8,10 +8,13 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1516, 815)
+        MainWindow.resize(1080, 700)
+        MainWindow.setFixedSize(1080, 700)
+        MainWindow.setWindowOpacity(0.95)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
@@ -217,5 +220,6 @@ class Ui_MainWindow(object):
         self.actionOutput_CostDetails.setText(_translate("MainWindow", "Output CostDetails"))
         self.actionOutput_VIPinfo.setText(_translate("MainWindow", "Output VIPinfo"))
         self.actionEnable.setText(_translate("MainWindow", "Enable"))
-        self.actionDiable.setText(_translate("MainWindow", "Diable"))
+        self.actionDiable.setText(_translate("MainWindow", "Disable"))
+
 
